@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(img/bg.png);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 140%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure video stays behind content */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+
+}
+
+.right-icon{
+    margin: 0px 10px;
+
+}
+
+.nama{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header img {
+    height: 45px;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-square {
+    width: 650px;
+    padding: 40px;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    opacity: 0;
+    background: linear-gradient(135deg, rgba(255, 254, 254, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(-20px);
+    transition: opacity 0.9s ease, transform 0.5s ease;
+    color: #ffffff;
+}
+
+.center-square.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Welcome{
+    margin-top: -10px;
+    margin-bottom: -20px; /* Jarak bawah dari description */
+    text-shadow: 0 0 10px #4f51b9;
+}
+
+.tagline {
+    font-size: 40px;
+    margin-bottom: -10px; /* Jarak bawah dari description */
+    text-shadow: 0 0 10px #4f51b9;
+}
+
+.game-image{
+    margin: 40px;
+    max-width: 65%;
+    animation: rotateAnimation 12s linear infinite;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 10px; 
+    color: #ffffff;
+    text-shadow: 0 0 10px #4f51b9;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#playerForm {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #faf7f7; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.enter-game {
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3d61af;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+.social-icon {
+    
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.profile-button button {
+ 
+    margin-left: 95px;
+    padding: 13px 70px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+}
+
+.copyright p {
+    margin: 0;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.level {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-level {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Jarak antar kotak */
+}
+
+.level-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 254, 254, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    color: #ffffff;
+}
+
+.level-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.level-box h1 {
+    font-size: 24px;
+    text-shadow: 0 0 10px #4f51b9;
+}
+
+.music-control {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.music-control button {
+    margin-top: 70px;
+    background-color: #ffffff;
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}

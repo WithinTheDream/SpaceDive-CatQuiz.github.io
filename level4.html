@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 4 - Space Dive: CatQuiz</title>
+    <link rel="stylesheet" href="css/stylelevel4.css">
+</head>
+<body>
+    <div class="header">
+        <a href="game.html"><button>HOME</button></a>
+        <h1>Level 4 - Planet Order Quiz</h1>
+    </div>
+    <section class="content">
+        <div class="container">
+            <div class="drag-container">
+
+                <img src="img/neptune.png" alt="Neptune" class="planet" data-planet="Neptune" draggable="true">
+                <img src="img/jupiterr.png" alt="Jupiter" class="planet" data-planet="Jupiter" draggable="true">
+                <img src="img/mars.png" alt="Mars" class="planet" data-planet="Mars" draggable="true">
+                <img src="img/saturnus.png" alt="Saturn" class="planet" data-planet="Saturn" draggable="true">
+                <img src="img/uranus.png" alt="Uranus" class="planet" data-planet="Uranus" draggable="true">
+                <img src="img/venus.png" alt="Venus" class="planet" data-planet="Venus" draggable="true">
+                <img src="img/earth.png" alt="Earth" class="planet" data-planet="Earth" draggable="true">
+                <img src="img/merkury.png" alt="Mercury" class="planet" data-planet="Mercury" draggable="true">
+            </div>
+            <div class="drop-container">
+                <div class="drop-area" data-planet="Mercury">Mercury</div>
+                <div class="drop-area" data-planet="Venus">Venus</div>
+                <div class="drop-area" data-planet="Earth">Earth</div>
+                <div class="drop-area" data-planet="Mars">Mars</div>
+                <div class="drop-area" data-planet="Jupiter">Jupiter</div>
+                <div class="drop-area" data-planet="Saturn">Saturn</div>
+                <div class="drop-area" data-planet="Uranus">Uranus</div>
+                <div class="drop-area" data-planet="Neptune">Neptune</div>
+            </div>
+        </div>
+        <button id="submitButton">Submit</button>
+    </section>
+    <script src="js/level4.js"></script>
+</body>
+</html>

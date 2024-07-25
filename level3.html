@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 - Space Dive : CatQuiz</title>
+    <link rel="stylesheet" href="css/stylelevel3.css">
+</head>
+<body>
+    <div class="header">
+        <a href="game.html"><button>HOME</button></a>
+        <h1>Level 3 - Drag and Drop Planets</h1>
+    </div>
+    <section class="content">
+        <div class="game-container">
+            <div class="planets" id="planets">
+                <img src="img/merkury.png" alt="Mercury" class="planet" draggable="true" data-planet="Mercury">
+                <img src="img/venus.png" alt="Venus" class="planet" draggable="true" data-planet="Venus">
+                <img src="img/earth.png" alt="Earth" class="planet" draggable="true" data-planet="Earth">
+                <img src="img/mars.png" alt="Mars" class="planet" draggable="true" data-planet="Mars">
+                <img src="img/jupiter.png" alt="Jupiter" class="planet" draggable="true" data-planet="Jupiter">
+            </div>
+            <div class="names" id="names">
+                <div class="name" data-planet="Mercury">Mercury</div>
+                <div class="name" data-planet="Venus">Venus</div>
+                <div class="name" data-planet="Earth">Earth</div>
+                <div class="name" data-planet="Mars">Mars</div>
+                <div class="name" data-planet="Jupiter">Jupiter</div>
+            </div>
+        </div>
+        <button id="submitButton">Submit</button>
+    </section>
+    <script src="js/level3.js"></script>
+</body>
+</html>

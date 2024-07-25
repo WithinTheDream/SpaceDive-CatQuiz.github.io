@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="stylegame.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="assets/liveWP/astronaut-satellite-space-moewalls-com.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Header Fixed -->
+    <div class="fixed-header">
+        <a href="index.html"><button class="header-button">EXIT</button></a>
+        <button id="resetProgress" class="header-button">Reset Progress</button>
+        <div class="music-control">
+            <button id="music-toggle" class="header-button">🔊</button>
+        </div>
+    </div>
+
+    <section>
+        <div class="content">
+            <div class="center-square">
+                <h3 class="Welcome">Welcome!</h3>
+                <h1 class="tagline">Space Dive : CatQuiz</h1>
+                <div class="greeting" id="greeting"></div>
+                <img src="img/logo.png" class="game-image rotate"><br>
+                <button id="scrollToSection2" class="home">Start</button>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <br><br><br><br><br>
+        <div class="level">
+            <div class="center-level">
+                <div class="how-to-play-box">
+                    <h1>How to Play</h1>
+                    <p>Select level 1 to start the game, answer some questions, solve some puzzle and continue to the next level ! GLHF!!👍😁</p>
+                </div>
+            </div>
+        </div>
+        <div class="level">
+            <div class="center-level">
+                <div class="level-box" onclick="openQuiz('level1.html')">
+                    <img src="img/logo.png" alt="Level 1" class="level-img">
+                    <h1>Level 1</h1>
+                </div>
+                <div class="level-box" onclick="openQuiz('level2.html')">
+                    <img src="img/moon.png" alt="Level 2" class="level-img">
+                    <h1>Level 2</h1>
+                </div>
+                <div class="level-box" onclick="openQuiz('bonus.html')">
+                    <img src="img/bonus.png" alt="bonus" class="level-img">
+                    <h1>????</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="center-level">
+                <div class="level-box" onclick="openQuiz('level3.html')">
+                    <img src="img/saturn.png" alt="Level 3" class="level-img">
+                    <h1>Level 3</h1>
+                </div>
+                <div class="level-box" onclick="openQuiz('level4.html')">
+                    <img src="img/jupiter.png" alt="Level 4" class="level-img">
+                    <h1>Level 4</h1>
+                </div>
+                <div class="level-box" onclick="openQuiz('end.html')">
+                    <img src="img/last.png" alt="end" class="level-img">
+                    <h1>The End</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="center-level">
+                <button id="viewResults" class="home">View Results</button>
+            </div>
+        </div>
+
+        <audio id="background-music" loop>
+            <source src="audio/A Space Trailer BGM - The Girl in Bridge.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    <script src="gameScript.js"></script>
+</body>
+</html>

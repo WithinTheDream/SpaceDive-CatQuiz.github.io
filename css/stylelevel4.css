@@ -1,0 +1,116 @@
+/* Gaya untuk level 4 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e0e0e0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header button {
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3d61af;
+    color: #ffffff;
+    border: none;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Gaya untuk container level 4 */
+.container {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak menjadi kolom */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 70px; /* Jarak dari header fixed */
+}
+
+.drag-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px; /* Menambahkan jarak antara ikon dan area drop */
+}
+
+.drop-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Gaya untuk gambar planet */
+.planet {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.planet.dragging {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+/* Gaya untuk area drop */
+.drop-area {
+    width: 150px;
+    height: 100px;
+    border: 2px dashed #999;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya untuk area drop yang benar atau salah */
+.drop-area.correct {
+    background-color: #d0ffd0;
+}
+
+.drop-area.incorrect {
+    background-color: #ffd0d0;
+}
+
+/* Gaya untuk tombol submit */
+#submitButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 9px;
+    background-color: #3d61af;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: #2a4b8b;
+}
